@@ -1,0 +1,251 @@
+/* File: src/App.css */
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Lifecycle Demo Styles */
+.lifecycle-demo {
+  background: #fff9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border-left: 4px solid #007bff;
+}
+
+.counter-section {
+  margin: 20px 0;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.visibility-section {
+  margin: 20px 0;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.message-box {
+  background: #f7f3ff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border-top: 4px solid #007bff;
+}
+
+.explanation {
+  background: #fff3cd;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 10px;
+  border: 1px solid #ffeaa7;
+}
+
+/* Data Fetching Demo Styles */
+.data-fetching-demo {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border-left: 4px solid #28a745;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f7f3ff;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #007bff;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.error-message {
+  background: #ffd7d4;
+  color: #721c24;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 10px 0;
+  border: 1px solid #f5c6cb;
+}
+
+.users-section {
+  margin-top: 20px;
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.user-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid #dee2e6;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.user-card:hover {
+  border-color: #007bff;
+  transform: translateY(-2px);
+}
+
+.user-card.active {
+  border-color: #28a745;
+  background: #f8fff5;
+}
+
+.user-detail-section {
+  margin-top: 20px;
+}
+
+.user-selector {
+  margin-bottom: 15px;
+}
+
+.user-detail-card {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 4px solid #28a745;
+}
+
+/* Dependencies Demo Styles */
+.dependencies-demo {
+  background: #fff9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  border-left: 4px solid #ffc107;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.text-input {
+  padding: 8px 12px;
+  border: 2px solid #e9ecef;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.text-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.logs-container {
+  margin-top: 20px;
+}
+
+.logs {
+  max-height: 300px;
+  overflow-y: auto;
+  background: #2d3748;
+  color: #e2e8f0;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #3c4858;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+}
+
+.log-entry {
+  padding: 5px 0;
+  border-bottom: 1px solid #4a5568;
+}
+
+.log-entry:last-child {
+  border-bottom: none;
+}
+
+.log-count {
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+  color: #a0aec0;
+}
+
+/* Common Button Styles */
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: white;
+}
+
+.btn-secondary {
+  background: #6c757d;
+  color: white;
+}
+
+.btn-success {
+  background: #28a745;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .controls {
+    grid-template-columns: 1fr;
+  }
+
+  .users-grid {
+    grid-template-columns: 1fr;
+  }
+}

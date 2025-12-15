@@ -1,0 +1,80 @@
+.counter-demo,
+.form-demo,
+.api-demo,
+.local-storage-demo,
+.toggle-demo {
+  padding: 15px;
+}
+
+.counter-group,
+.form-group,
+.toggle-group,
+.setting-group {
+  margin: 15px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: white;
+}
+
+input,
+select,
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+button.active {
+  background: #28a745;
+}
+
+.loading {
+  color: #856404;
+  background: #fff3cd;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.error {
+  color: #721c24;
+  background: #f8d7da;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.data-display {
+  background: #f8f9fa;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.demo-note {
+  font-style: italic;
+  color: #6c757d;
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px dashed #ccc;
+}
+
+.dark-mode {
+  background: #333;
+  color: white;
+}
+
+.dark-mode .toggle-group {
+  background: #444;
+  border-color: #555;
+}
